@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>The Catalyst</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="editions.html">Editions</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <button onclick="openPDF()" id="pdfButton">
+            <img src="Screenshot 2024-01-29 at 12.36.34 AM.png" alt="Open PDF" width="300" height="400">
+        </button>
+        <div id="pdfContainer" style="display:none;">
+            <embed id="pdfEmbed" src="Summer 2023 Edition-compressed (1).pdf" type="application/pdf" width="200%" height="5
+            00px" />
+        </div>
+    </div>
+
+    <footer>
+        <p>© patrick scott 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
