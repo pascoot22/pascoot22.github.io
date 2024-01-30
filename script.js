@@ -25,11 +25,45 @@ function sendEmail() {
     xhr.send(params);
 }
 
-function openPDF() {
+function openPDF(pdfPath, closeButtonId, openButtonId) {
+    
+    closeAllPDFs();
+    
     var pdfContainer = document.getElementById("pdfContainer");
-    pdfContainer.style.display = "block";
+    var pdfEmbed = document.getElementById("pdfEmbed");
+    var closeButton = document.getElementById(closeButtonId);
+    var openButton = document.getElementById(openButtonId);
 
-    var pdfButton = document.getElementById("pdfButton");
-    pdfButton.style.display = "none";
+    // Close any other open PDFs
+    
+
+    pdfEmbed.src = pdfPath;
+    pdfContainer.style.display = "block";
+    closeButton.style.display = "block";
+    openButton.style.display = "none";
 }
 
+function closePDF(openButtonId, closeButtonId) {
+    var pdfContainer = document.getElementById("pdfContainer");
+    var pdfEmbed = document.getElementById("pdfEmbed");
+    var closeButton = document.getElementById(closeButtonId);
+    var openButton = document.getElementById(openButtonId);
+
+    pdfEmbed.src = "";
+    pdfContainer.style.display = "none";
+    closeButton.style.display = "none";
+    openButton.style.display = "block";
+}
+
+function closeAllPDFs() {
+    var openButtons = document.querySelectorAll('[id^="openButton"]');
+    var closeButtons = document.querySelectorAll('[id^="closeButton"]');
+
+    openButtons.forEach(function(button) {
+        button.style.display = "block";
+    });
+
+    closeButtons.forEach(function(button) {
+        button.style.display = "none";
+    });
+}

@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    
 }
 
 header {
@@ -29,7 +30,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #777;
+    background-color: #800c25;
 }
 
 section {
@@ -37,19 +38,12 @@ section {
 }
 
 .container {
-    display: flex;
+    
     justify-content: space-around;
     padding: 10px;
 }
 
-.column {
-    flex: 1;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin: 10px;
-}
+
 
 footer {
     background-color: #333;
@@ -60,4 +54,26 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item p {
+    margin: 10px 0;
 }

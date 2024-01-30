@@ -18,12 +18,16 @@
         </nav>
     </header>
 
+    
+
     <div class="container">
-        <button onclick="openPDF()" id="pdfButton">
-            <img src="Screenshot 2024-01-29 at 12.36.34 AM.png" alt="Open PDF" width="300" height="400">
-        </button>
+        <button id="openButton1" onclick="openPDF('Summer 2023 Edition-compressed (1).pdf', 'closeButton1', 'openButton1')">Open PDF 1</button>
+        <button id="openButton2" onclick="openPDF('Cat Issue 9.pdf', 'closeButton2', 'openButton2')">Open PDF 2</button>
+
         <div id="pdfContainer" style="display:none;">
-            <embed id="pdfEmbed" src="Summer 2023 Edition-compressed (1).pdf" type="application/pdf" width="200%" height="500px" />
+            <embed id="pdfEmbed" src="" type="application/pdf" width="100%" height="600px" />
+            <button id="closeButton1" onclick="closePDF('openButton1', 'closeButton1')">Close PDF 1</button>
+            <button id="closeButton2" onclick="closePDF('openButton2', 'closeButton2')">Close PDF 2</button>
         </div>
     </div>
 

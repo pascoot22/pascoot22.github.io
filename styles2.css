@@ -1,0 +1,112 @@
+body {
+    font-family:  Arial, Helvetica, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('clark.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+}
+
+.centered-text {
+    text-align: center;
+    height: 70vh;
+    color: #dc9344;
+    margin-top: 20vh;
+    font-size: 32px;
+}
+
+header {
+    background-color: #A40728;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #A40728;
+    padding: 0.5em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #800c25;
+}
+
+nav2 {
+    display: flex;
+    justify-content: center;
+    background-color: #A40728;
+    padding: 0.5em;
+    
+}
+
+nav2 a {
+    color: #fff;
+    text-decoration: none;
+   
+    
+    font-size: 40;
+}
+
+nav2 a:hover {
+    text-decoration: underline;
+}
+
+
+
+.container {
+    
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #A40728;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    text-align: center;
+    color: #f4f4f4;
+}
+
+
+
+
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+    height: 30px; /* Adjusted height to make it shorter */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+  
+  /* Create two equal columns that sits next to each other */
+  
+  
+  
