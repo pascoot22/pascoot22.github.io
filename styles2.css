@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    background-image: url('clark.jpeg');
+    background-image: url('clark2.jpeg');
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: cover;
@@ -12,22 +12,29 @@ body {
 .centered-text {
     text-align: center;
     height: 70vh;
-    color: #dc9344;
+    color: #f4f4f4;
     margin-top: 20vh;
     font-size: 32px;
 }
 
 header {
-    background-color: #A40728;
+    
     color: #fff;
-    text-align: center;
+    text-align: left;
     padding: 1em;
+    
+}
+.h1{
+    text-align: left;
+}
+.subheading{
+    color:#333;
 }
 
 nav {
     display: flex;
-    justify-content: center;
-    background-color: #A40728;
+    justify-content: right;
+    
     padding: 0.5em;
 }
 
@@ -41,23 +48,24 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #800c25;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
 }
 
 nav2 {
     display: flex;
     justify-content: center;
-    background-color: #A40728;
+    background-color: #f4f4f4;
     padding: 0.5em;
     
 }
 
 nav2 a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
-   
     
-    font-size: 40;
+    margin-top: 12vh;
+    font-size: 40px;
 }
 
 nav2 a:hover {
@@ -71,19 +79,20 @@ nav2 a:hover {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    background-color: #A40728;
+    background-color: #f4f4f4;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    width: 80%;
     gap: 20px;
     padding: 20px;
 }
 
 .grid-item {
-    text-align: center;
-    color: #f4f4f4;
+    
+    color: #333;
 }
 
 
@@ -99,7 +108,7 @@ footer {
     text-align: center;
     padding: 0.5em;
     height: 30px; /* Adjusted height to make it shorter */
-    position: fixed;
+   
     bottom: 0;
     width: 100%;
 }

@@ -3,19 +3,21 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    margin-left: auto ;
+    margin-right: auto ;
     
 }
 
 header {
     background-color: #A40728;
     color: #fff;
-    text-align: center;
+    text-align: left;
     padding: 1em;
 }
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     background-color: #A40728;
     padding: 0.5em;
 }
@@ -30,7 +32,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #800c25;
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
 }
 
 section {
@@ -41,6 +44,7 @@ section {
     
     justify-content: space-around;
     padding: 10px;
+    color: #f4f4f4;
 }
 
 
@@ -51,7 +55,7 @@ footer {
     text-align: center;
     padding: 0.5em;
     height: 30px; /* Adjusted height to make it shorter */
-    position: fixed;
+
     bottom: 0;
     width: 100%;
 }
