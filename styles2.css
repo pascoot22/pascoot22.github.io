@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    background-image: url('clark2.jpeg');
+    background-image: url('clark2.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: cover;
@@ -43,35 +43,15 @@ nav a {
     text-decoration: none;
     padding: 0.5em 1em;
     margin: 0 0.5em;
-    border-radius: 4px;
+    border-radius: 1px;
     transition: background-color 0.3s;
+    
 }
 
 nav a:hover {
     text-decoration: underline;
     text-decoration-thickness: 2px;
 }
-
-nav2 {
-    display: flex;
-    justify-content: center;
-    background-color: #f4f4f4;
-    padding: 0.5em;
-    
-}
-
-nav2 a {
-    color: #333;
-    text-decoration: none;
-    
-    margin-top: 12vh;
-    font-size: 40px;
-}
-
-nav2 a:hover {
-    text-decoration: underline;
-}
-
 
 
 .container {
@@ -86,8 +66,8 @@ nav2 a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 80%;
-    gap: 20px;
-    padding: 20px;
+    gap: 30px;
+    padding: 40px;
 }
 
 .grid-item {
@@ -97,10 +77,38 @@ nav2 a:hover {
 
 
 
+.container2 {
+    
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #4449ce;
+    color: #f4f4f4;
+}
 
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    gap: 20px;
+    padding: 20px;
+}
 
+.containerh {
+    
+    display: flex;
+   
+    padding: 20px;
+    
+}
 
-
+.grid-containerh {
+    display: grid;
+    grid-template-columns: repeat(2);
+    width: 100%;
+    gap: 10px;
+    padding: 40px;
+}
 
 footer {
     background-color: #333;
