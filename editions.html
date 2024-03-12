@@ -19,28 +19,36 @@
         </nav>
     </header>
 
-    
 
-    <div class="container">
-        <button id="openButton1" onclick="openPDF('Summer 2023 Edition-compressed (1).pdf', 'closeButton1', 'openButton1')">Open PDF 1</button>
-        <button id="openButton2" onclick="openPDF('Cat Issue 9.pdf', 'closeButton2', 'openButton2')">Open PDF 2</button>
-
-        <div id="pdfContainer" style="display:none;">
-            <embed id="pdfEmbed" src="" type="application/pdf" width="100%" height="600px" />
-            <button id="closeButton1" onclick="closePDF('openButton1', 'closeButton1')">Close PDF 1</button>
-            <button id="closeButton2" onclick="closePDF('openButton2', 'closeButton2')">Close PDF 2</button>
+    <div class="container" id="buttons">
+        <button id="openButton1" onclick="openPDF('issue10', 'issue8','issue9')">
+            <img src="Screenshot 2024-01-29 at 12.36.34 AM.png" width="250" height="300">   
+        </button>
+        <button id="openButton2" onclick="openPDF('issue9', 'issue8','issue10')">
+            <img src="summer18.png" width="250" height="300">
+        </button>
+        <button id="openButton3" onclick="openPDF('issue8', 'issue9','issue10')">
+            <img src="winter18.png" width="250" height="300">
+        </button>
+        
+    </div>
+    <div class="container" id="pdf">
+        
+        <div id="pdfContainer1" style="display:block;">
+            <div class="pdf2">
+                <embed id="issue10" src="Summer 2023 Edition-compressed (1).pdf" width="100%" height="0px" />
+                <embed id="issue9" src="Cat Issue 9.pdf" width="100%" height="0px" />
+                <embed id="issue8" src="The Catalyst Issue 8.pdf" width="100%" height="0px" />
+            </div>
+                 
         </div>
+        
     </div>
 
-    <div class="container">
-        
-    </div>
-    <div class="container">
-        
-    </div>
-    <footer>
+    
+    <footer2>
         <p>© Patrick Scott 2024</p>
-    </footer>
+    </footer2>
 
     <script src="script.js"></script>
 

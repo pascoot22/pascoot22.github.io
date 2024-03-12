@@ -9,16 +9,27 @@ body {
 }
 
 header {
-    background-color: #A40728;
+    background-color: #819cdb;
     color: #fff;
     text-align: left;
     padding: 1em;
 }
 
+.pdf {
+    width: 90%;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+
+.pdf2 {
+    width: 70%;
+    margin-left: auto ;
+    margin-right: auto ;
+}
 nav {
     display: flex;
     justify-content: right;
-    background-color: #A40728;
+    background-color: #819cdb;
     padding: 0.5em;
 }
 
@@ -60,6 +71,17 @@ footer {
     width: 100%;
 }
 
+footer2 {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+    height: 30px; /* Adjusted height to make it shorter */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -80,4 +102,26 @@ footer {
 
 .grid-item p {
     margin: 10px 0;
+}
+
+.button-column {
+    flex: 0 0 auto;
+    width: 300px;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+.button-column button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.pdf-viewer {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+.pdf-viewer iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
