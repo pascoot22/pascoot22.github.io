@@ -1,0 +1,42 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+ 
+  text-align: center;
+}
+.scrolling-text {
+  position: relative;
+  white-space: nowrap; 
+  animation:fadeIn 3s ease-in, scroll-left 3s ease-in-out 3.5s both;
+  
+
+}
+.scrolling-text img {
+width: 300px;
+height: auto;
+}
+
+
+@keyframes scroll-left {
+  from {
+    bottom: -140%;
+    -webkit-transform:scale(3); /*Webkit: Scale down image to 0.6x original size*/
+-moz-transform:scale(3); /*Mozilla scale version*/
+-o-transform:scale(3); /*Opera scale version*/
+  }
+  to {
+    bottom: 0%;
+    -webkit-transform:scale(1); /*Webkit: Scale down image to 0.6x original size*/
+-moz-transform:scale(1); /*Mozilla scale version*/
+-o-transform:scale(1); /*Opera scale version*/
+
+  }
+  
+}
+@keyframes fadeIn {
+from { opacity: 0; }
+to { opacity: 1; }
+}
