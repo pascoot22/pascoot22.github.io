@@ -1,23 +1,33 @@
 body, html {
-    height: 100%;
-    margin: 0;
   font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
- 
-  text-align: center;
+  background-color: whitesmoke;
 }
-.scrolling-text {
-  position: relative;
-  white-space: nowrap; 
-  animation:fadeIn 3s ease-in, scroll-left 3s ease-in-out 3.5s both;
-  
+body {
+  padding: 5% 5%;
+  font-family: Helvetica, sans-serif;
+  font-size: small;
+}
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+
+  position: fixed;
+  top: 5%;
+  z-index: 1000;
 }
-.scrolling-text img {
-width: 300px;
-height: auto;
+.header a{
+  color:rgb(251, 69, 69);
+  text-decoration: none;
+  padding: 3% 5%;
 }
+.header a:hover{
+  text-decoration:underline;
+}
+
+
 
 
 @keyframes scroll-left {
