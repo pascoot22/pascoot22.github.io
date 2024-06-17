@@ -5,26 +5,34 @@ body, html {
 body {
   padding: 5% 5%;
   font-family: Helvetica, sans-serif;
-  font-size: small;
+  justify-content: center;
+  align-items: center;
+  display: block;
 }
 
-.header {
+nav {
   display: flex;
   align-items: center;
   justify-content: left;
   width: 100%;
 
-  position: fixed;
-  top: 5%;
-  z-index: 1000;
 }
-.header a{
+nav a{
   color:rgb(251, 69, 69);
   text-decoration: none;
-  padding: 3% 5%;
+  padding: 1% 4%;
 }
-.header a:hover{
+nav a:hover{
   text-decoration:underline;
+}
+
+.main-content {
+  padding: 5% 10%;
+  width: 40%;
+  text-align: center;
+  background-color: beige;
+  border-radius: 3%;
+  box-shadow:1px 1px 1px 1px  rgb(179, 179, 179);
 }
 
 
