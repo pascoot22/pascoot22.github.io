@@ -15,19 +15,22 @@ nav {
   align-items: center;
   justify-content: left;
   width: 100%;
+  padding-bottom: 4%;
 
 }
 nav a{
   color:rgb(251, 69, 69);
   text-decoration: none;
   padding: 1% 4%;
+  
+  
 }
 nav a:hover{
   text-decoration:underline;
 }
 
 .main-content {
-  padding: 5% 10%;
+  padding-left: 5%;
 }
 
 .textbox {
@@ -40,23 +43,23 @@ nav a:hover{
 }
 
 .projectlinks{
-  padding-left: 5%;
+  padding-left: 4%;
   display: block;
 }
 .projectlinks a{
-  padding: 5%;
-  
-  color: gray;
+  color: rgb(96, 95, 95);
   text-decoration: none;
+  padding-top: 10px;
+  font-size: x-large;
 }
+
 .projectlinks a:hover{
   text-decoration: underline;
 }
-.title{
-  font-size: x-large;
-}
 .subtitle{
   font-size: large;
+  padding-left: 2%;
+  color: rgb(96, 95, 95);
 }
 
 
