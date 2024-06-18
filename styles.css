@@ -28,11 +28,35 @@ nav a:hover{
 
 .main-content {
   padding: 5% 10%;
+}
+
+.textbox {
+  padding: 5% 10%;
   width: 40%;
   text-align: center;
   background-color: beige;
   border-radius: 3%;
   box-shadow:1px 1px 1px 1px  rgb(179, 179, 179);
+}
+
+.projectlinks{
+  padding-left: 5%;
+  display: block;
+}
+.projectlinks a{
+  padding: 5%;
+  
+  color: gray;
+  text-decoration: none;
+}
+.projectlinks a:hover{
+  text-decoration: underline;
+}
+.title{
+  font-size: x-large;
+}
+.subtitle{
+  font-size: large;
 }
 
 
