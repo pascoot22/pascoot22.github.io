@@ -22,11 +22,18 @@ nav a{
   color:rgb(251, 69, 69);
   text-decoration: none;
   padding: 1% 4%;
-  
+  background-image: linear-gradient(rgb(251, 69, 69), rgb(251, 69, 69));
+  background-size: 0% 0.1em;
+  background-position-y: 85%;
+  background-position-x: 0%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease-in-out;
   
 }
-nav a:hover{
-  text-decoration:underline;
+nav a:hover,
+a:focus,
+a:active {
+background-size: 100% 0.1em;
 }
 
 .main-content {
@@ -60,6 +67,9 @@ nav a:hover{
   font-size: large;
   padding-left: 2%;
   color: rgb(96, 95, 95);
+}
+.resume{
+  padding-left: 20%;
 }
 
 
