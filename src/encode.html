@@ -13,8 +13,19 @@
       $( "#nav" ).load( "nav.html" );
     </script>
 
+<div id="encode" class="main-content">
+  <p>What do you want to encrypt/decrypt</p>
+  <input type="text" id="message"></input>
+  <input type="text" id="key"></input>
+  <p></p>
+  <button onclick="encrypt()">Encrypt</button>
+  <button onclick="decrypt()">Decrypt</button>
+</div>
+
+  <p id="encrpted-text"></p>
+
   <div id="encode" class="main-content">
-    <p>What do you want to encode</p>
+    <p>Hashing, use this to generate a sha-256 hash</p>
     <input type="text" id="message"></input>
     <button onclick="hashString()">Encode</button>
   </div>
@@ -32,6 +43,28 @@
       .map(b => b.toString(16).padStart(2, '0'))
       .join('');
     document.getElementById('success').textContent = ans;
+  }
+
+  async function encrypt() {
+    const message = document.getElementById('message').value;
+    const key = document.getElementById('key').value;
+    const buffer = new TextEncoder().encode(str);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', buffer);
+    const ans = Array.from(new Uint8Array(hashBuffer))
+      .map(b => b.toString(16).padStart(2, '0'))
+      .join('');
+    document.getElementById('encrptedText').textContent = ans;
+  }
+
+  async function decrypt() {
+    const message = document.getElementById('message').value;
+    const key = document.getElementById('key').value;
+    const buffer = new TextEncoder().encode(str);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', buffer);
+    const ans = Array.from(new Uint8Array(hashBuffer))
+      .map(b => b.toString(16).padStart(2, '0'))
+      .join('');
+    document.getElementById('encrptedText').textContent = ans;
   }
 
 
